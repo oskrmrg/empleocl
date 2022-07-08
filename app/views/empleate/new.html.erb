@@ -1,0 +1,43 @@
+<hr>
+<h3>Ingrese una nueva Vacante disponible</h3>
+<br>
+<%= form_with model: @empleo do |form| %>
+    <div>
+        <%= form.label :titulo %>
+        <%= form.text_field :titulo %>
+    </div>
+    
+    <div>
+        <%= form.label :descripcion %>
+        <%= form.text_area :descripcion %>
+    </div>
+    
+    <div>
+        <%= form.label :vacantes %>
+        <%= form.text_field :vacantes %>
+    </div>
+    
+    <div>
+        <%= form.label :salario %>
+        <%= form.text_field :salario %>
+    </div>
+    
+    <div>
+        <%= form.label :fecha_inic %>
+        <%= form.date_field :fecha_inic %>
+    </div>
+    
+    <div>
+        <%= form.label :tipo %>
+        <%= form.text_field :tipo %>
+    </div>
+
+    <div>
+        <%= form.label :ubicacion %>
+        <%= form.text_field :ubicacion %>
+    </div>
+    
+    <div>
+        <%= form.submit "Añadir Vacante" %>
+    </div>
+<% end %>

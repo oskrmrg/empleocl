@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Empleate</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="p-3 mb-2 bg-primary text-white">
+      <h1>Empleate - ¡Una vacante espera por Ti!</h1>
+      <%= image_tag('empleate.png', size: "250x200", alt: "Empleate")%>
+    </nav>
+    <%= yield %>
+    <hr>
+    <footer>
+      <%= link_to 'Ir al Inicio', inicio_path %>
+      <%= link_to 'Ir al listado de Vacantes', empleate_path %>
+    </footer>
+  </body>
+</html>

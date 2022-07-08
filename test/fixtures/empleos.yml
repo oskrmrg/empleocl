@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  descripcion: MyText
+  vacantes: 1
+  salario: 1.5
+  fecha_inic: 2022-07-08
+  tipo: MyString
+  ubicacion: MyText
+
+two:
+  titulo: MyString
+  descripcion: MyText
+  vacantes: 1
+  salario: 1.5
+  fecha_inic: 2022-07-08
+  tipo: MyString
+  ubicacion: MyText

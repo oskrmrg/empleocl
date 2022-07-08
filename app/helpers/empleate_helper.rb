@@ -1,0 +1,2 @@
+module EmpleateHelper
+end

@@ -1,0 +1,7 @@
+<hr>
+    <% @empleos.each do |empleo| %>
+        <%= link_to empleo_path(empleo.id) do %>
+            <li><h3><%= empleo.titulo %></h3>
+            <span>$<%= empleo.salario %></span></li> 
+        <% end %>
+    <% end %>
