@@ -1,0 +1,17 @@
+<h3>Registro de Usuario</h3>
+<br>
+<%= form_with (url: loginusuarios_path) do |form| %>
+    <div>
+        <%= form.label :login %>
+        <%= form.text_field :login %>
+    </div>
+
+    <div>
+        <%= form.label :password %>
+        <%= form.password_field :password %>
+    </div>
+
+    <div>
+        <%= form.submit "Guardar Regitro" %>
+    </div>
+<% end %>

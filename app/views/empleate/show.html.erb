@@ -1,7 +1,40 @@
 <hr>
-<h2><%= @empleo.titulo %></h2>
-<p><%= @empleo.descripcion %></p>
-<p><%= @empleo.vacantes %></p>
-<p><%= @empleo.salario %>$</p>
-<p><%= @empleo.tipo %></p>
-<p><%= @empleo.ubicacion %></p>
+<p>
+    <strong>Titulo:</strong>
+    <%= @empleo.titulo %>
+</p>
+
+<p>
+    <strong>Descripcion del Empleo:</strong>
+    <%= @empleo.descripcion %>
+</p>
+
+<p>
+    <strong>N° Vacantes:</strong>
+    <%= @empleo.vacantes %>
+</p>
+
+<p>
+    <strong>Salario:</strong>
+    <%= @empleo.salario %>$
+</p>
+
+<p>
+    <strong>Fecha de Inicio:</strong>
+    <%= @empleo.fecha_inic %>
+</p>
+
+<p>
+    <strong>Modalidad:</strong>
+    <%= @empleo.tipo %>
+</p>
+
+<p>
+    <strong>Ubicacion:</strong>
+    <%= @empleo.ubicacion %>
+</p>
+
+<div>
+<%= link_to 'Editar Vacante', edit_empleate_path(@empleo) %>
+<%= link_to 'Eliminar Vacante', empleate_path(@empleo), method: :delete, data: {confirm: "¿Está seguro de eliminar la Vacante?"} %>
+</div>

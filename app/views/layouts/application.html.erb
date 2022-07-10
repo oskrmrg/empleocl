@@ -11,15 +11,23 @@
   </head>
 
   <body>
-    <nav class="p-3 mb-2 bg-primary text-white">
-      <h1>Empleate - ¡Una vacante espera por Ti!</h1>
-      <%= image_tag('empleate.png', size: "250x200", alt: "Empleate")%>
+    <nav class="p-3 mb-2 bg-primary">
+      <h1><%= link_to 'Empleate - ¡Una vacante espera por Ti!', inicio_path %></h1>
+      <%= image_tag('logo.png', size: "120x100", alt: "Empleate")%>
     </nav>
+    <div>
+        <a href="http://localhost:3000/users/new" class="text-primary">Registro de Usuarios</a>
+    </div>
+    <div>
+      <a href="http://localhost:3000/empresas/new" class="text-primary">Registro de Empresas</a>
+    </div>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
     <%= yield %>
     <hr>
     <footer>
-      <%= link_to 'Ir al Inicio', inicio_path %>
-      <%= link_to 'Ir al listado de Vacantes', empleate_path %>
+      <%= link_to 'Ir al Inicio', inicio_path, class:"text-primary" %>
+      <%= link_to 'Ir al listado de Vacantes', empleate_path, class:"text-primary" %>
     </footer>
   </body>
 </html>
